@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Brincando com JavaScript</title>
+</head>
+
+<body>
+    <h1>Página Inicial</h1>
+    <p id="paragrafo">Exemplo de aula <span>teste</span> Exemplo de aula <span>Lorem <strong>negrito<strong></span> Exemplo de aula</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li id="item">Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+    </ul>
+</body>
+<script>
+    console.log(document.getElementById("paragrafo").innerText);
+    console.log(document.querySelector("#paragrafo span").innerText);
+    console.log(document.querySelector("#paragrafo span:nth-child(2)").innerText);
+    document.querySelector("#item").innerHTML = "9";
+
+    function exibirInnerHTML() {
+        console.log(document.getElementById("paragrafo").innerText);
+    }
+    let tela = exibirInnerHTML();
+
+    function tagP() {
+        console.log(document.querySelector("p#paragrafo").innerText);
+    }
+    let printP = tagP();
+
+    function tagS() {
+        console.log(document.querySelector("#paragrafo strong").innerText);
+    }
+    let printS = tagS();
+
+    function tagL() {
+        console.log(document.getElementById("item").innerText);
+    }
+    let printL = tagL();
+</script>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Parágrafo</title>
+    <style>
+        .classelegal {
+            border: solid black 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo</h1>
+    <p id="firstP">Primeiro Paragráfo</p>
+    <p id="firstP2">Segundo Paragráfo</p>
+    <p id="firstP3">Terceiro Paragráfo</p>
+</body>
+
+<script>
+    function min_um(a, b) {
+        return (a <= b) ? a : b
+    }
+
+    function min_dois(a, b) {
+        let result = null
+        if (a <= b) {
+            result = a
+        } else {
+            result = b
+        }
+        return result;
+    }
+
+    let result = min_um(10, 20);
+    alert(result);
+
+    // Exercício 2
+     function pont(x, y) {
+    let a = Math.pow(x, y);
+        return a;
+      }
+
+      let b = pont(2, 5);
+     console.log(b)
+
+    //  Exercício 3
+
+     let xx = prompt("Declare um valor para X: ");
+     let yy = prompt("Declare um valor para Y: ");
+
+    var resultadofinal = pont(xx, yy);
+    console.log(resultadofinal)
+    
+     //  Exercício 4
+
+    let xxx = prompt("Declare um valor para X: ");
+    let yyy = prompt("Declare um valor para Y: ");
+
+    function maior(x,y) {
+     var res = Math.max(x, y);
+     return res;
+      }
+
+     var res2 = maior(xxx, yyy);
+    console.log(res2)
+    
+
+    //  Exercício 5
+
+    let aluno = {} 
+    aluno.nome = "Elisangela";
+     console.log(aluno.nome);
+    aluno.sobrenome = "Goncalves";
+    console.log(aluno.sobrenome);
+    aluno.nome = "Emanuelle";
+    console.log(aluno.nome);
+    delete aluno.nome;
+    console.log(aluno.nome);
+    console.log(aluno.hasOwnProperty("time"));
+
+   //  Exercício 6
+
+    let salarios = {
+        Neymar: 100,
+        Ronaldinho: 160,
+        Ronaldo: 130
+    }
+
+    function Todos() {
+        let soma = (salarios.Neymar + salarios.Ronaldinho + salarios.Ronaldo);
+        return soma;
+        alert(soma);
+    }
+
+    let valorTodos = Todos();
+    console.log(valorTodos);
+   
+
+</script>
+
+</html>
